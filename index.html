@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/d68deed6fc.js" crossorigin="anonymous"></script>
+    <title>Boostrap</title>
+</head>
+
+<body>
+    <div id="encabezado-completo">
+        <div id="barra-superior">
+            <div id="izquierda">
+                <li class="radio">
+                    <a class="nav-link active rad" aria-current="page" href="#">
+                        <img src="./img/radio.png" alt="">
+                        <p>Emisora 98.1FM</p>
+                    </a>
+                </li>
+            </div>
+            <div id="derecha">
+                <li class="nav-item dropdown idioma">
+                    <a class="nav-link idiomas d-flex align-items-center" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="me-2">Español</span>
+                        <img src="./img/esp.png" alt="Esp" class="me-1">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <img src="./img/eng.png" alt="Eng" class="me-2" width="20">
+                                <span class="ms-2 text-muted">Ingles</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <img src="./img/por.png" alt="Por" class="me-2" width="20">
+                                <span class="ms-2 text-muted">Portugues</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <input type="checkbox" id="toggle-search" class="toggle-search-checkbox">
+
+                <div class="search-box">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </div>
+
+                <label for="toggle-search" id="search-icon">
+                    <i class="fas fa-search"></i>
+                </label>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg">
+                    <nav class="navbar">
+                        <div class="container-fluid">
+                            <div id="inicio">
+                                <a class="nav-opciones" href="#">
+                                    <img id="imagen-inicio" src="./img/Logo.png" alt="Logo universitario">
+                                </a>
+                            </div>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                                aria-labelledby="offcanvasNavbarLabel">
+                                <div class="offcanvas-body">
+                                    <ul id="items" class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Universidad
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Presentacion</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Organigrama</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Normatividad</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Programas
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Presentacion</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Organigrama</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Normatividad</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Gestión
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Servicios
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Convocatorias
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Investigacion
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="#pie-de-pagina" role="button">
+                                                Contacto
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div id="Banner">
+        <div id="Banner-image">
+            <img id="imagen-banner" src="./img/uniamazonia.jpg" alt="Universidad de la Amazonia">
+        </div>
+        <div id="portales">
+            <button id="opciones"> <img src="./img/Chaira.png" alt="Chaira">Chaira</button>
+            <button id="opciones"> <img src="./img/correo.png" alt="Chaira">Correo</button>
+            <button id="opciones"> <img src="./img/aula.png" alt="Chaira">Aula extendida</button>
+            <button id="opciones"> <img src="./img/campus.png" alt="Chaira">Campus virtual</button>
+            <button id="opciones"> <img src="./img/atencion.png" alt="Chaira">ATU</button>
+            <button id="opciones"> <img src="./img/gestion.png" alt="Chaira">SigC</button>
+            <button id="opciones"> <img src="./img/invitacion.png" alt="Chaira">Invitaciones</button>
+            <button id="opciones"> <img src="./img/bpm.png" alt="Chaira">BPM.GOV</button>
+            <button id="opciones"> <img src="./img/SecopII.jpg" alt="Chaira">SECOP II</button>
+        </div>
+    </div>
+    <div id="servicio">
+        <h2 id="titulo-servicio">Servicios Académicos</h2>
+        <hr>
+    </div>
+    <div id="Contenido">
+        <div class="card">
+            <img id="imagen-card" src="./img/inscripcion.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <a href="#" class="btn btn-primary">Inscripciones</a>
+            </div>
+        </div>
+        <div class="card">
+            <img id="imagen-card" src="./img/aspirantes.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <a href="#" class="btn btn-primary">Aspirantes</a>
+            </div>
+        </div>
+        <div class="card">
+            <img id="imagen-card" src="./img/estudiantes.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <a href="#" class="btn btn-primary">Estudiantes</a>
+            </div>
+        </div>
+        <div class="card">
+            <img id="imagen-card" src="./img/graduados.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <a href="#" class="btn btn-primary">Graduados</a>
+            </div>
+        </div>
+        <div class="card">
+            <img id="imagen-card" src="./img/calendario.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <a href="#" class="btn btn-primary">Calendario <br> academico</a>
+            </div>
+        </div>
+        <div class="card">
+            <img id="imagen-card" src="./img/transparencia.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <a href="#" class="btn btn-primary">Transparencia</a>
+            </div>
+        </div>
+        <div class="card">
+            <img id="imagen-card" src="./img/opac.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <a href="#" class="btn btn-primary">Catalogo en <br>Linea OPAC</a>
+            </div>
+        </div>
+        <div class="card">
+            <img id="imagen-card" src="./img/pqr.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <a href="#" class="btn btn-primary">PQRS-D</a>
+            </div>
+        </div>
+        <div class="card">
+            <img id="imagen-card" src="./img/participa.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <a href="#" class="btn btn-primary">Participa</a>
+            </div>
+        </div>
+        <div class="card">
+            <img id="imagen-card" src="./img/contrato.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <a href="#" class="btn btn-primary">Contratacion</a>
+            </div>
+        </div>
+    </div>
+    <div id="servicio">
+        <h2 id="titulo-servicio">Secci&oacute;n Informativa</h2>
+        <hr>
+    </div>
+    <div id="noticias">
+        <div class="cardd">
+            <h2 id="titulo-servicio">Ultimas Noticias</h2>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carddd">
+                    <img src="./img/noticia1.jpg" alt="...">
+                    <div class="card-bodyy">
+                        <h5 class="card-title">Eucaristía de Miércoles de Ceniza</h5>
+                        <p class="card-text">Docentes y administrativos, fortalezcamos la integridad académica con estas
+                            herramientas clave...</p>
+                        <a href="#" class="btn btn-primary">Ver mas...</a>
+                    </div>
+                </div>
+                <div class="carddd">
+                    <img src="./img/noticia4.jpg" class="card-img-top" alt="...">
+                    <div class="card-bodyy">
+                        <h5 class="card-title">¡Da el primer paso hacia tu futuro laboral!</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Ver mas...</a>
+                    </div>
+                </div>
+                <div class="carddd">
+                    <img src="./img/noticia2.jpg" class="card-img-top" alt="...">
+                    <div class="card-bodyy">
+                        <h5 class="card-title">¡Vive el arte y la cultura en la Universidad de la...</h5>
+                        <p class="card-text">El Área de Arte y Cultura presenta su portafolio de eventos 2025, lleno de creatividad, innovación...</p>
+                        <a href="#" class="btn btn-primary">Ver mas...</a>
+                    </div>
+                </div>
+                <div class="carddd">
+                    <img src="./img/noticia3.jpeg" class="card-img-top" alt="...">
+                    <div class="card-bodyy">
+                        <h5 class="card-title">Día Mundial de la Eficiencia Energética</h5>
+                        <p class="card-text">Cuidar el planeta empieza con pequeñas acciones. Hagamos un uso responsable de la energía y...</p>
+                        <a href="#" class="btn btn-primary">Ver mas...</a>
+                    </div>
+                </div>
+                <div class="carddd">
+                    <img src="./img/noticia5.png" class="card-img-top" alt="...">
+                    <div class="card-bodyy">
+                        <h5 class="card-title">Capacitación Turnitin Feedback Studio y OC</h5>
+                        <p class="card-text">Docentes y administrativos, fortalezcamos la integridad académica con estas herramientas clave...</p>
+                        <a href="#" class="btn btn-primary">Ver mas...</a>
+                    </div>
+                </div>
+                <div class="carddd">
+                    <img src="./img/noticia6.jpg" class="card-img-top" alt="...">
+                    <div class="card-bodyy">
+                        <h5 class="card-title">¡Universidad de la Amazonia recolecta esperanza!</h5>
+                        <p class="card-text">Únete a la gran jornada de recolección de tapas plásticas y ayudemos a los niños con cáncer...</p>
+                        <a href="#" class="btn btn-primary">Ver mas...</a>
+                    </div>
+                </div>
+            </div>
+            <button class="mas-noticias">Ver Mas Noticias</button>
+        </div>
+        <div id="canal-repositorio">
+            <div id="canal">
+                <h2 id="title">Contenido recomendado</h2>
+                <div id="video">
+                    <iframe id="link-video" src="https://www.youtube.com/embed/6-o98M13BTg"
+                        title="Himno Universidad de la Amazonia 2023" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="repositorio">
+                <div class="accordion">
+                    <button class="accordion-btn">Repositorio de la Verdad <span>+</span></button>
+                    <div class="accordion-content">
+                        <a href="#">Enlace 1</a>
+                        <a href="#">Enlace 2</a>
+                        <a href="#">Enlace 3</a>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <button class="accordion-btn">Publica con Nosotros <span>+</span></button>
+                    <div class="accordion-content">
+                        <a href="#">Formulario</a>
+                        <a href="#">Requisitos</a>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <button class="accordion-btn">Periódico Virtual <span>+</span></button>
+                    <div class="accordion-content">
+                        <a href="#">Última edición</a>
+                        <a href="#">Archivo</a>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <button class="accordion-btn">Plan de Desarrollo <span>+</span></button>
+                    <div class="accordion-content">
+                        <a href="#">Objetivos</a>
+                        <a href="#">Metas</a>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <button class="accordion-btn">Rendici&oacute;n de Cuentas <span>+</span></button>
+                    <div class="accordion-content">
+                        <a href="#">Objetivos</a>
+                        <a href="#">Metas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sedes">
+        <h2 id="title-sede">Conoce m&aacute;s sobre nuestras sedes</h2>
+        <hr>
+        <div id="sedes-individuales">
+            <div id="sede-guaviare">
+                <a href="#">
+                    <img src="./img/guaviare.png"></a>
+            </div>
+            <div id="sede-putumayo">
+                <a href="#">
+                    <img src="./img/putumayo.png" alt="">
+                </a>
+            </div>
+            <div id="sede-meta">
+                <a href="#">
+                    <img src="./img/leticia.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <footer>
+        <div class="footer-container">
+            <div id="footer-title">
+                <h2 id="titulo-servicio">Enlaces de interes</h2>
+                <hr>
+            </div>
+            <div class="footer-right">
+                <div class="footer-column">
+                    <h4>Atencion al ciudadano</h4>
+                    <ul>
+                        <li><a href="#">Glosario</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Tramites Uniamazonia</a></li>
+                        <li><a href="#">Politicas de privacidad</a></li>
+                        <li><a href="#">Politicas Editorial</a></li>
+                        <li><a href="#">Mapa del Sitio</a></li>
+                        <li><a href="#">Notificaciones por Aviso</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Aplicaciones Web</h4>
+                    <ul>
+                        <li><a href="#">Inscripciones</a></li>
+                        <li><a href="#">Liquidaci&oacute;n</a></li>
+                        <li><a href="#">Cat&aacute;logo en L&iacute;nea</a></li>
+                        <li><a href="#">SIGEPI</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Consultorio juridico</a></li>
+                        <li><a href="#">Biblioteca</a></li>
+                        <li><a href="#">Editorial Uniamazonia</a></li>
+                        <li><a href="#">Consultorio Contable</a></li>
+                        <li><a href="#">N&uacute;cleos de Apoyo Contable</a></li>
+                        <li><a href="#">Consultorio Jur&iacute;dico</a></li>
+                        <li><a href="#">Centro de Conciliaci&oacute;n</a></li>
+                        <li><a href="#">Centro de Idiomas</a></li>
+                        <li><a href="#">Unidad de Emprendimiento</a></li>
+                        <li><a href="#">Proveedores</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Informaci&oacute;n institucional</h4>
+                    <ul>
+                        <li><a href="#">Estatuto General</a></li>
+                        <li><a href="#">Estatutos Docente</a></li>
+                        <li><a href="#">Estatutos Estudiantil</a></li>
+                        <li><a href="#">Estatutos de Contrataci&oacute;n</a></li>
+                        <li><a href="#">Estatutos de Biblioteca</a></li>
+                        <li><a href="#">Estatutos del Investigador</a></li>
+                        <li><a href="#">Estatutos de Presupuestal</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Descubre la Universidad</h4>
+                    <ul>
+                        <li><a href="#">Marco Jur&iacute;dico</a></li>
+                        <li><a href="#">Rendici&oacute;n de cuentas</a></li>
+                        <li><a href="#">Plan de Desarrollo PDI</a></li>
+                        <li><a href="#">Transparencia y Acceso a Informaci&oacute;n</a></li>
+                        <li><a href="#">Portal para niños</a></li>
+                        <li><a href="#">Ofertas de Empleo</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Descubre la Universidad</h4>
+                    <ul>
+                        <li><a href="#">Marco Jur&iacute;dico</a></li>
+                        <li><a href="#">Rendici&oacute;n de cuentas</a></li>
+                        <li><a href="#">Plan de Desarrollo PDI</a></li>
+                        <li><a href="#">TPortal para niños</a></li>
+                        <li><a href="#">Ofertas de Empleo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-left">
+            <div id="servicio-atencion">
+                <img src="./img/Logo.png" alt="Universidad de la Amazonia">
+                <p>Sede Porvenir Calle 17 Diagonal 17 con Carrera 3F - Barrio Porvenir <br>
+                    Florencia, Caquetá, Colombia, Suramérica <br>
+                </p>
+                <h3>Horario de Atención</h3>
+                <p>Lunes a Viernes de 7:30 a.m. a 11:30 m. y 1:30 p.m. a 5:30 p.m. <br> Vigilada Ministerio de Educación
+            </div>
+            <div class="social-icons" id="pie-de-pagina">
+                </p>
+                <h3>Linea de contacto</h3>
+                <p>Correo: atencionalciudadano@uniamazonia.edu.co <br> Contenidos web: webmaster@uniamazonia.edu.co <br>
+                    Notificaciones judiciales: njudiciales@uniamazonia.edu.co
+                </p>
+                <nav>
+                    <ul>
+                        <li><a href="#">
+                                <il><i class="fa-brands fa-square-facebook"></i></il>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <il><i class="fa-brands fa-square-twitter"></i></il>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <il><i class="fa-brands fa-square-youtube"></i></il>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <il><i class="fa-brands fa-square-instagram"></i></il>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <div id="under_bar">
+        &copy; 2025 Uniamazonia.edu.co - Todos los derechos reservados | Política de Privacidad
+    </div>
+
+</body>
+
+</html>
