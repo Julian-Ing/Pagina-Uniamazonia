@@ -348,14 +348,15 @@ body {
 .carddd img{
     width: 180px;
     height: 126px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     border-radius: 10px;
 }
 
 .carddd .btn{
     width: 100px;
-    height: 25px;
-    font-size: 15px;
+    height: 5vh auto;
+    font-weight: bold;
+    font-size: 18px;
     padding: 0;
     background-color: #1aaf3d;
 }
