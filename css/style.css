@@ -683,7 +683,7 @@ footer {
 }
 
 .footer-column {
-    margin-right: 40px;
+    margin-right: 30px;
 }
 
 .footer-column h4 {
@@ -1268,7 +1268,7 @@ footer {
     }
 }
 
-@media (max-width: 1133px){
+@media (max-width: 1360px){
     nav.navbar.navbar-expand-lg{
         max-width: 100%;
         display: flex;
@@ -1367,5 +1367,20 @@ footer {
     
     .accordion-content a:hover {
         background-color: #ddd;
+    }
+
+    .footer-right {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 100px;
+        background-color: rgba(221, 223, 221, 0.493);
+    }
+    
+    .footer-column {
+        margin-right: 29px;
     }
 }
